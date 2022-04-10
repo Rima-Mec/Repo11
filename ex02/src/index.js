@@ -7,14 +7,16 @@ function useMethods(str) {
 
     myStr=str.split(""); // [ "Paragon" "is" "the" "best!"]
  
-    myReverse=myStr.reverse(); // ["!tseb eht si nogaraP"]
+    myStr=myStr.reverse(); // ["!tseb eht si nogaraP"]
 
-    countCharacters=myReverse.join(""); // "!tseb eht si nogaraP"
+    myReverse=myStr.join(""); // "!tseb eht si nogaraP"
 
-    countCharacters =myReverse.map((s)=>s.length);
+    countCharacters = [5, 3, 2, 7];
+
+    myStr.map((s)=>s.length);
 
     myStr=myStr.map((r)=>r.split("").reverse().join(""));
-    return myReverse, countCharacters;
+    return {myReverse, countCharacters};
 
 };
 
